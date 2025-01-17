@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-image: url('linn.jpg'); /* Path to the image */
+    background-image: url('https://zipsqu.github.io/ProjectWW/linn.jpg'); /* Path to the image */
     background-size: cover; /* Make the image cover the entire header */
     background-position: center center; /* Center the image */
     color: black; /* Text color for better contrast */
