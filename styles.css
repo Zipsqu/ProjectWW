@@ -9,7 +9,6 @@ body {
 
 header {
     background-image: url('https://zipsqu.github.io/ProjectWW/linn.jpg'); /* Path to your image */
-    background-size: cover; /* Make the image cover the header */
     background-position: left center; /* Center the image */
     color: white;
     padding: 4rem 2rem 2rem; /* Increase padding on top (4rem) to move the content down */
