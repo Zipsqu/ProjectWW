@@ -11,7 +11,7 @@ header {
     background-image: url('images/header-background.jpg'); /* Path to the image */
     background-size: cover; /* Make the image cover the entire header */
     background-position: center center; /* Center the image */
-    color: white; /* Text color for better contrast */
+    color: black; /* Text color for better contrast */
     padding: 2rem; /* Some padding around the text */
     text-align: center;
 }
