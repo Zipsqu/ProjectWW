@@ -17,12 +17,12 @@ header {
 
 nav ul {
     list-style-type: none;
-    padding: 4rem 2rem 2rem;
+    padding: 8rem 2rem 2rem;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 20 10px;
 }
 
 nav ul li a {
