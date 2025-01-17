@@ -11,7 +11,7 @@ header {
     background-image: url('https://zipsqu.github.io/ProjectWW/linn.jpg'); /* Path to your image */
     background-position: left center; /* Center the image */
     color: white;
-    padding: 6rem 2rem 2rem; /* Increase padding on top (4rem) to move the content down */
+    padding: 2rem 2rem 2rem; /* Increase padding on top (4rem) to move the content down */
     text-align: center;
 }
 
