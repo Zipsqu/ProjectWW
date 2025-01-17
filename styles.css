@@ -1,14 +1,14 @@
 /* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: #f0f0f0;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-image: https://zipsqu.github.io/ProjectWW/linn.jpg("linn.jpg");
     color: white;
     padding: 1rem;
     text-align: center;
