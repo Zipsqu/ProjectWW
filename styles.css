@@ -129,6 +129,17 @@ footer p {
     font-family: Arial, sans-serif;
 }
 
+.social-media ul {
+    list-style-type: none; /* Removes the bullet points */
+    padding: 0; /* Removes extra padding around the list */
+    margin: 0; /* Removes default margin around the list */
+}
+
+.social-media li {
+    display: inline-block; /* Aligns icons horizontally */
+    margin: 0 10px; /* Adds spacing between icons */
+}
+
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     header {
