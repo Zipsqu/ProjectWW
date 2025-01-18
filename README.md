@@ -1,1 +1,2 @@
-# Website for The Linn Cafe shop in Glasgow.
+# Website for "The Linn Cafe" in Glasgow.
+
