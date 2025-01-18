@@ -10,24 +10,30 @@ body {
 header {
     background-image: url('https://zipsqu.github.io/ProjectWW/linn.jpg'); /* Path to your image */
     background-position: left center; /* Center the image */
+    background-size: cover; /* Ensure the image covers only the header area */
     color: white;
-    padding: 2rem 2rem 2rem; /* Increase padding on top (4rem) to move the content down */
+    padding: 2rem; /* Keep padding unchanged to avoid affecting header size */
     text-align: center;
+    position: relative; /* Enable positioning for child elements */
+    height: 300px; /* Set a fixed height for the header */
 }
 
 .nav-wrapper {
-    margin-top: 70px; /* Increase margin to push the nav links lower */
+    position: absolute; /* Position the navigation relative to the header */
+    bottom: 20px; /* Move the nav links closer to the bottom of the header */
+    width: 100%; /* Ensure the nav stays centered */
+    text-align: center; /* Center the navigation horizontally */
 }
 
 nav ul {
     list-style-type: none;
-    padding: 2rem;
-    text-align: center; /* Center the nav items horizontally */
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 20px; /* Increase horizontal spacing between menu items */
+    margin: 0 20px; /* Keep increased horizontal spacing */
 }
 
 nav ul li a {
