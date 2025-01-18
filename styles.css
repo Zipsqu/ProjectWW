@@ -42,13 +42,16 @@ nav ul li {
 nav ul li a {
     color: black;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    padding: 10px 20px; /* Add padding for better spacing */
 }
 
 nav ul li a:hover {
-    color: #007bff;
-    text-decoration: underline;
+    color: #007bff; /* Change color on hover */
+    text-decoration: underline; /* Optional underline effect */
 }
+
 
 main {
     flex-grow: 1; /* Allows the main content to take up available space */
