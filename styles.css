@@ -60,6 +60,36 @@ main {
     padding-bottom: 60px; /* Extra padding at the bottom for space between content and footer */
 }
 
+.gallery {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(0); }
+}
+
+.gallery {
+    animation: slide 10s infinite;
+}
+
 button {
     padding: 12px 20px;
     background-color: #4CAF50;
