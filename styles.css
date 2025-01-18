@@ -28,18 +28,11 @@ header {
     text-align: center;
 }
 
-nav {
-    background-color: #333; /* Dark background for the menu bar */
-    padding: 10px 0; /* Add vertical padding */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
-}
-
 nav ul {
-    display: flex;
-    justify-content: center; /* Center the menu items */
-    margin: 0;
+    list-style-type: none;
     padding: 0;
-    list-style: none; /* Remove default bullets */
+    margin: 0;
+}
 
 nav ul li {
     display: inline;
