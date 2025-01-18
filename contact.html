@@ -4,37 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact - The Linn Cafe</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="nav-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
+    
     <main>
-        <h2>Get in Touch</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to get in touch, feel free to reach out to us using the contact information below. We look forward to hearing from you!</p>
+        
+        <section>
+            <h3>Our Location</h3>
+            <p>123 Linn Street, Cozy Town, 12345</p>
+        </section>
+        
+        <section>
+            <h3>Phone</h3>
+            <p>+123 456 7890</p>
+        </section>
+        
+        <section>
+            <h3>Email</h3>
+            <p>info@linncafe.com</p>
+        </section>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-            <button type="submit">Submit</button>
-        </form>
-        <p id="formResponse"></p>
+        <section>
+            <h3>Social Media</h3>
+            <p>Follow us on social media for the latest updates and offers:</p>
+            <ul>
+                <li><a href="https://facebook.com/LinnCafe">Facebook</a></li>
+                <li><a href="https://twitter.com/LinnCafe">Twitter</a></li>
+                <li><a href="https://instagram.com/LinnCafe">Instagram</a></li>
+            </ul>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 My Interactive Website</p>
+        <p>&copy; 2025 The Linn Cafe</p>
     </footer>
 
     <script src="script.js"></script>
