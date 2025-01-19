@@ -108,6 +108,8 @@ main {
     max-width: 100%; /* Prevents images from exceeding 90% of the container width */
     max-height: 100%; /* Prevents images from exceeding 90% of the container height */
     border-radius: 10px; /* Optional rounded corners */
+    object-fit: contain;  /* Ensures the entire image is visible and not cropped */
+
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
 }
 
