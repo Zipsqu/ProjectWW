@@ -114,6 +114,19 @@ main {
     text-align: center;
 }
 
+.menu-image {
+    width: 100%;
+    max-width: 200px; /* Set max width to keep images uniform */
+    height: 200px;
+    object-fit: cover; /* Ensures images are cropped nicely */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.menu-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    
 /* Individual Slide */
 .slide img {
     width: 100%; /* Ensures images are not stretched horizontally */
