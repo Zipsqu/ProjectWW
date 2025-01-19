@@ -101,6 +101,14 @@ main {
     text-align: center;
 }
 
+/* Individual Slide */
+.slide img {
+    width: 100%;
+    height: 100%; /* Ensures images fill the slide area */
+    object-fit: cover; /* Crop images to maintain aspect ratio while filling the container */
+    border-radius: 10px; /* Optional: keeps corners rounded */
+}
+
 /* Gallery Wrapper */
 .gallery-wrapper {
     position: relative;
@@ -109,13 +117,19 @@ main {
     overflow: hidden;
     border: 2px solid #ddd;
     border-radius: 10px;
+
+    /* Force fixed height for consistent slides */
+    aspect-ratio: 16 / 9; /* Adjust this ratio as needed (e.g., 4:3, 16:9, etc.) */
+    max-height: 500px; /* Optional: set a max height for all images */
 }
 
-/* Gallery Track */
+/* For slides with inconsistent sizes */
 .gallery {
     display: flex;
-    transition: transform 0.5s ease-in-out; /* Smooth slide animation */
+    transition: transform 0.5s ease-in-out;
+    height: 100%; /* Ensures the gallery inherits the fixed height */
 }
+
 
 /* Individual Slide */
 .slide {
