@@ -101,29 +101,35 @@ main {
     text-align: center;
 }
 
+/* Gallery Wrapper */
 .gallery-wrapper {
     width: 80%;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
 }
 
+/* Gallery Track */
 .gallery {
     display: flex;
-    width: 500%;
-    animation: slide 15s infinite linear;
+    animation: slide 25s infinite linear;
+    transition: transform 0.5s ease-in-out;
 }
 
+/* Individual Slide */
 .slide {
-    width: 20%; /* Each image takes up 20% of the gallery width */
-    transition: transform 1s ease-in-out;
+    min-width: 100%; /* Each image takes the full width of the gallery wrapper */
+    transition: transform 0.5s ease-in-out;
 }
 
 .slide img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
-/* Keyframes to create the sliding effect */
+/* Keyframes for smooth sliding animation */
 @keyframes slide {
     0% { transform: translateX(0); }
     20% { transform: translateX(-100%); }
@@ -131,20 +137,6 @@ main {
     60% { transform: translateX(-300%); }
     80% { transform: translateX(-400%); }
     100% { transform: translateX(0); }
-}
-
-
-@keyframes slide {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(-100%); }
-    40% { transform: translateX(-200%); }
-    60% { transform: translateX(-300%); }
-    80% { transform: translateX(-400%); }
-    100% { transform: translateX(0); }
-}
-
-.gallery {
-    animation: slide 10s infinite;
 }
 
 button {
