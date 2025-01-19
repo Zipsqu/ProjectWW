@@ -225,3 +225,20 @@ button.next:hover {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusts to smaller images on mobile */
     }
 }
+
+footer {
+    background-color: #333; /* Dark gray background */
+    color: white; /* White text for contrast */
+    text-align: center; /* Centers the text horizontally */
+    padding: 10px 0; /* Adds padding for spacing */
+    width: 100%; /* Ensures the footer spans the full width */
+    position: relative; /* Default positioning */
+    bottom: 0; /* Ensures it's at the bottom */
+    font-size: 14px; /* Adjust font size if needed */
+    border-top: 1px solid #444; /* Optional thin border for separation */
+}
+
+footer p {
+    margin: 0; /* Removes default margin to prevent shifting */
+    padding: 0; /* No padding for tighter layout */
+}
