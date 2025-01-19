@@ -103,10 +103,14 @@ main {
 
 /* Individual Slide */
 .slide img {
-    width: 100%;
-    height: 100%; /* Ensures images fill the slide area */
-    object-fit: cover; /* Crop images to maintain aspect ratio while filling the container */
-    border-radius: 10px; /* Optional: keeps corners rounded */
+    width: auto; /* Ensures images are not stretched horizontally */
+    height: auto; /* Ensures images are not stretched vertically */
+    max-width: 90%; /* Prevents images from exceeding 90% of the container width */
+    max-height: 90%; /* Prevents images from exceeding 90% of the container height */
+    margin: auto; /* Centers the images within the slide */
+    display: block; /* Ensures proper centering with margin */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
 }
 
 /* Gallery Wrapper */
@@ -118,16 +122,21 @@ main {
     border: 2px solid #ddd;
     border-radius: 10px;
 
-    /* Force fixed height for consistent slides */
-    aspect-ratio: 16 / 9; /* Adjust this ratio as needed (e.g., 4:3, 16:9, etc.) */
-    max-height: 500px; /* Optional: set a max height for all images */
+    /* Adjust the height of the slideshow container */
+    aspect-ratio: 16 / 9; /* Keeps a consistent ratio */
+    max-height: 500px; /* Set a limit for how large the gallery container should be */
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    background: #f9f9f9; /* Light background for better visual appeal */
 }
 
-/* For slides with inconsistent sizes */
+/* Gallery container for slides */
 .gallery {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    height: 100%; /* Ensures the gallery inherits the fixed height */
+    height: 100%; /* Ensures gallery stretches to the wrapper height */
+    align-items: center; /* Ensures images are vertically aligned in the container */
 }
 
 
