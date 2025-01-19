@@ -103,8 +103,8 @@ main {
 
 /* Individual Slide */
 .slide img {
-    width: auto; /* Ensures images are not stretched horizontally */
-    height: auto; /* Ensures images are not stretched vertically */
+    width: 100%; /* Ensures images are not stretched horizontally */
+    height: 100%; /* Ensures images are not stretched vertically */
     max-width: 100%; /* Prevents images from exceeding 90% of the container width */
     max-height: 100%; /* Prevents images from exceeding 90% of the container height */
     border-radius: 10px; /* Optional rounded corners */
