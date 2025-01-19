@@ -103,9 +103,10 @@ main {
 
 /* Gallery Wrapper */
 .gallery-wrapper {
+    position: relative;
     width: 80%;
-    overflow: hidden;
     margin: 20px auto;
+    overflow: hidden;
     border: 2px solid #ddd;
     border-radius: 10px;
 }
@@ -113,14 +114,13 @@ main {
 /* Gallery Track */
 .gallery {
     display: flex;
-    animation: slide 25s infinite linear;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out; /* Smooth slide animation */
 }
 
 /* Individual Slide */
 .slide {
-    min-width: 100%; /* Each image takes the full width of the gallery wrapper */
-    transition: transform 0.5s ease-in-out;
+    min-width: 100%; /* Ensures each slide takes up full width */
+    box-sizing: border-box;
 }
 
 .slide img {
@@ -129,75 +129,35 @@ main {
     border-radius: 10px;
 }
 
-/* Keyframes for smooth sliding animation */
-@keyframes slide {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(-100%); }
-    40% { transform: translateX(-200%); }
-    60% { transform: translateX(-300%); }
-    80% { transform: translateX(-400%); }
-    100% { transform: translateX(0); }
-}
-
-button {
-    padding: 12px 20px;
-    background-color: #4CAF50;
+/* Navigation Buttons */
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #45a049;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
+    font-size: 2rem;
     padding: 10px;
-    width: 100%;
-    position: relative; /* Default position */
-    bottom: 0;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
 }
 
-footer p {
-    margin: 0;
+button.prev {
+    left: 10px;
 }
 
-.menu-gallery {
-    display: grid; /* Change to grid layout for neat rows and columns */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible column count */
-    gap: 20px; /* Space between items */
-    justify-items: center; /* Center items horizontally */
-    margin-top: 20px;
-    padding: 10px; /* Add padding around the gallery */
+button.next {
+    right: 10px;
 }
 
-.menu-item {
-    text-align: center;
+button.prev:hover,
+button.next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-.menu-image {
-    width: 100%;
-    max-width: 200px; /* Set max width to keep images uniform */
-    height: 200px;
-    object-fit: cover; /* Ensures images are cropped nicely */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    transition: transform 0.3s; /* Smooth hover effect */
-}
-
-.menu-image:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-}
 
 /* Change the background color of the overlay */
 .lb-overlay {
