@@ -101,6 +101,19 @@ main {
     text-align: center;
 }
 
+.menu-gallery {
+    display: grid; /* Change to grid layout for neat rows and columns */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible column count */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center items horizontally */
+    margin-top: 20px;
+    padding: 10px; /* Add padding around the gallery */
+}
+
+.menu-item {
+    text-align: center;
+}
+
 /* Individual Slide */
 .slide img {
     width: 100%; /* Ensures images are not stretched horizontally */
