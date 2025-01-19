@@ -105,10 +105,8 @@ main {
 .slide img {
     width: auto; /* Ensures images are not stretched horizontally */
     height: auto; /* Ensures images are not stretched vertically */
-    max-width: 90%; /* Prevents images from exceeding 90% of the container width */
-    max-height: 90%; /* Prevents images from exceeding 90% of the container height */
-    margin: auto; /* Centers the images within the slide */
-    display: block; /* Ensures proper centering with margin */
+    max-width: 100%; /* Prevents images from exceeding 90% of the container width */
+    max-height: 100%; /* Prevents images from exceeding 90% of the container height */
     border-radius: 10px; /* Optional rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
 }
@@ -137,6 +135,15 @@ main {
     transition: transform 0.5s ease-in-out;
     height: 100%; /* Ensures gallery stretches to the wrapper height */
     align-items: center; /* Ensures images are vertically aligned in the container */
+}
+
+.gallery-image {
+    width: 100%; /* Makes the image fill the container's width */
+    height: 100%; /* Ensures the image fills the container's height */
+    object-fit: contain; /* Ensures the entire image is visible without being cropped */
+    object-position: center; /* Centers the image within its container */
+    border-radius: 8px; /* Adds rounded corners (optional) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow (optional) */
 }
 
 
