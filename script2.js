@@ -1,23 +1,44 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const gallery = document.querySelector(".gallery");
     const slides = document.querySelectorAll(".slide");
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
     const totalSlides = slides.length;
 
-    let index = 0;
+    let currentIndex = 0;
+    let interval;
 
-    function showSlide(newIndex) {
-        if (newIndex < 0) {
-            index = totalSlides - 1; // Go to the last slide if at the beginning
-        } else if (newIndex >= totalSlides) {
-            index = 0; // Go to the first slide if at the end
-        } else {
-            index = newIndex;
-        }
-        gallery.style.transform = `translateX(-${index * 100}%)`;
+    // Function to show a specific slide
+    function showSlide(index) {
+        currentIndex = (index + totalSlides) % totalSlides; // Loop back if out of bounds
+        gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
 
-    // Optional: Auto-slide every 5 seconds
-    setInterval(() => {
-        showSlide(index + 1);
-    }, 5000); // 5 seconds per slide
+    // Automatic Slideshow
+    function startSlideshow() {
+        interval = setInterval(() => {
+            showSlide(currentIndex + 1);
+        }, 5000); // 5 seconds per slide
+    }
+
+    // Stop slideshow on user interaction
+    function stopSlideshow() {
+        clearInterval(interval);
+    }
+
+    // Event Listeners for Navigation Buttons
+    prevButton.addEventListener("click", () => {
+        stopSlideshow();
+        showSlide(currentIndex - 1);
+        startSlideshow(); // Resume slideshow after interaction
+    });
+
+    nextButton.addEventListener("click", () => {
+        stopSlideshow();
+        showSlide(currentIndex + 1);
+        startSlideshow(); // Resume slideshow after interaction
+    });
+
+    // Start the slideshow on page load
+    startSlideshow();
 });
