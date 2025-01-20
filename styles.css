@@ -259,7 +259,6 @@ button.next:hover {
     .menu-gallery {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusts to smaller images on mobile */
     }
-}
 
 footer {
     background-color: #333; /* Dark gray background */
@@ -276,4 +275,6 @@ footer {
 footer p {
     margin: 0; /* Removes default margin to prevent shifting */
     padding: 0; /* No padding for tighter layout */
+}
+
 }
