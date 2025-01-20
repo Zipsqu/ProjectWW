@@ -185,6 +185,8 @@ main {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    object-fit: contain; /* Ensure the entire image fits inside the frame */
+
 }
 
 /* Navigation Buttons */
