@@ -101,6 +101,19 @@ main {
     text-align: center;
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Optional: makes sure the content is vertically centered in the viewport */
+}
+
+table {
+    margin: 20px auto; /* Centers the table horizontally */
+}
+
 .menu-gallery {
     display: grid; /* Change to grid layout for neat rows and columns */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible column count */
