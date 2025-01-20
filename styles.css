@@ -126,7 +126,7 @@ main {
 
 .menu-image:hover {
     transform: scale(1.05); /* Slight zoom on hover */
-    
+}
 /* Individual Slide */
 .slide img {
     width: 100%; /* Ensures images are not stretched horizontally */
@@ -259,7 +259,7 @@ button.next:hover {
     .menu-gallery {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusts to smaller images on mobile */
     }
-
+}
 footer {
     background-color: #333; /* Dark gray background */
     color: white; /* White text for contrast */
