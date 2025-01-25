@@ -13,7 +13,9 @@ body {
 header {
   background: 
     url('https://zipsqu.github.io/ProjectWW/Pics/linn.jpg');    background-position: center; /* Center the image horizontally and vertically */
-    background-size: cover; /* Ensure the image always covers the header area */
+  background-size: contain; /* Ensures the image fits entirely */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Keeps it centered */
     color: white;
     padding: 2rem;
     text-align: center;
