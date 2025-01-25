@@ -16,7 +16,7 @@ header {
   background-size: contain; /* Ensures the image fits entirely */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-position: center; /* Keeps it centered */
-    color: white;
+    color: black;
     padding: 2rem;
     text-align: center;
     position: relative;
