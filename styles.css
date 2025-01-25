@@ -11,8 +11,9 @@ body {
 }
 
 header {
-    background-image: url('https://zipsqu.github.io/ProjectWW/Pics/linn.jpg'); /* Path to your image */
-    background-position: center; /* Center the image horizontally and vertically */
+  background: 
+    linear-gradient(to bottom, rgba(34, 139, 34, 0.9), rgba(255, 223, 128, 0.7)), 
+    url('https://zipsqu.github.io/ProjectWW/Pics/linn.jpg');    background-position: center; /* Center the image horizontally and vertically */
     background-size: cover; /* Ensure the image always covers the header area */
     color: white;
     padding: 2rem;
@@ -20,6 +21,7 @@ header {
     position: relative;
     height: 300px; /* Fixed height for the header */
 }
+
 
 .nav-wrapper {
     position: absolute;
@@ -62,10 +64,12 @@ main {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://zipsqu.github.io/ProjectWW/Background.jpg'); /* Path to your image */
-    background-position: center 20%; /* Shifts the image down (10% from the top) */
-    background-size: cover; /* Ensure the image always covers the header area */
-    margin: 0;
+    background: 
+    linear-gradient(to top, rgba(255, 223, 128, 0.7), rgba(34, 139, 34, 0.9)), 
+    url('path/to/body-image.jpg');
+  background-size: cover;
+  background-position: center top;
+  color: black; /* Optional: Adjust based on design */    margin: 0;
     padding: 0;
 }
 
