@@ -143,6 +143,7 @@ table {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
 }
 
+/* Coffee Cup */
 .coffee-cup {
     position: relative;
     margin: 2rem auto;
@@ -150,29 +151,48 @@ table {
     height: 100px;
     background: #9b7653;
     border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Steam Animation */
 .steam {
     position: absolute;
-    top: -30px;
+    top: -40px;
     left: 50%;
-    width: 20px;
-    height: 50px;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent);
+    width: 15px;
+    height: 40px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.6), transparent);
     border-radius: 50%;
-    animation: steam 2s infinite ease-in-out;
+    transform: translateX(-50%);
+    animation: steam-animation 3s infinite ease-in-out;
+    opacity: 0;
 }
 
-@keyframes steam {
-    0%, 100% {
-        transform: translateY(0) scaleX(1);
-        opacity: 1;
+.steam-1 {
+    animation-delay: 0s;
+}
+.steam-2 {
+    animation-delay: 0.5s;
+}
+.steam-3 {
+    animation-delay: 1s;
+}
+
+@keyframes steam-animation {
+    0% {
+        transform: translate(-50%, 0) scale(1);
+        opacity: 0.6;
     }
     50% {
-        transform: translateY(-20px) scaleX(0.9);
-        opacity: 0.5;
+        transform: translate(-50%, -30px) scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -60px) scale(0.8);
+        opacity: 0;
     }
 }
+
 
 /* Gallery Wrapper */
 .gallery-wrapper {
