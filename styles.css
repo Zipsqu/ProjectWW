@@ -12,7 +12,6 @@ body {
 
 header {
   background: 
-    linear-gradient(to bottom, rgba(34, 139, 34, 0.9), rgba(255, 223, 128, 0.7)), 
     url('https://zipsqu.github.io/ProjectWW/Pics/linn.jpg');    background-position: center; /* Center the image horizontally and vertically */
     background-size: cover; /* Ensure the image always covers the header area */
     color: white;
@@ -65,8 +64,7 @@ main {
 body {
     font-family: Arial, sans-serif;
     background: 
-    linear-gradient(to top, rgba(255, 223, 128, 0.7), rgba(34, 139, 34, 0.9)), 
-    url('path/to/body-image.jpg');
+    url('https://api.deepai.org/job-view-file/75ce34ac-41ee-4790-99a5-459ca823c872/outputs/output.jpg');
   background-size: cover;
   background-position: center top;
   color: black; /* Optional: Adjust based on design */    margin: 0;
