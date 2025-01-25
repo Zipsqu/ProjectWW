@@ -63,7 +63,7 @@ main {
 body {
     font-family: Arial, sans-serif;
     background-image: url('https://zipsqu.github.io/ProjectWW/Background.jpg'); /* Path to your image */
-    background-position: center; /* Center the image horizontally and vertically */
+    background-position: center 20%; /* Shifts the image down (10% from the top) */
     background-size: cover; /* Ensure the image always covers the header area */
     margin: 0;
     padding: 0;
