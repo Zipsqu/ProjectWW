@@ -297,6 +297,10 @@ button.next:hover {
     margin: 0 10px; /* Adds spacing between icons */
 }
 
+    background-image: url('https://zipsqu.github.io/ProjectWW/Pics/linn.jpg'); /* Path to your image */
+    background-position: center; /* Center the image horizontally and vertically */
+    background-size: cover; /* Ensure the image always covers the header area */
+
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     header {
